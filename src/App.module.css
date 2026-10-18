@@ -1,0 +1,138 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  width: min(1180px, 88%);
+  margin: 0 auto;
+  flex: 1;
+  padding: 32px 0;
+}
+
+.heroSection {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.heroContent h1 {
+  margin: 12px 0 18px;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+}
+
+.heroContent p {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #64748b;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.uploadedFileBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 22px;
+  margin-bottom: 36px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+}
+
+.uploadedFileBar div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.uploadedFileBar strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.uploadedFileBar span {
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  color: #334155;
+  background: #ffffff;
+  border: 1px solid #dbe2ea;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.secondaryButton:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.configArea{
+  display: grid;
+  grid-template-columns: minmax(380px, 460px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.processingError {
+  margin: 12px 0 20px 0;
+  padding: 14px 16px;
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.downloadArea {
+  display: flex;
+  justify-content: center;
+  margin: 28px 0 12px;
+}
+
+@media (max-width: 900px) {
+  .mainContent {
+    width: 92%;
+    padding: 42px 0;
+  }
+
+  .heroContent h1 {
+    font-size: 2.2rem;
+  }
+
+  .heroContent p {
+    font-size: 0.95rem;
+  }
+
+  .uploadedFileBar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .secondaryButton {
+    width: 100%;
+  }
+
+  .configArea {
+    grid-template-columns: 1fr;
+  }
+}

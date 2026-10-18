@@ -1,0 +1,150 @@
+.resize-controls-section {
+  margin: 0;
+}
+
+.resize-controls {
+  max-width: 100%;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 22px;
+}
+
+.control-group label,
+.control-label {
+  color: #334155;
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+.segmented-control {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  padding: 5px;
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+.segment-button {
+  padding: 11px;
+  color: #64748b;
+  background: transparent;
+  border: none;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+.segment-button.active {
+  color: #1e40af;
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.08);
+}
+
+.dimensions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.control-group input[type="number"],
+.control-group select {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  color: #172033;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+}
+
+.control-group input[type="number"]:focus,
+.control-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px #dbeafe;
+}
+
+.checkbox-control {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 22px;
+  color: #475569;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.checkbox-control input {
+  width: 16px;
+  height: 16px;
+  accent-color: #2563eb;
+}
+
+.control-divider {
+  height: 1px;
+  margin: 26px 0;
+  background: #e2e8f0;
+}
+
+.percentage-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.percentage-heading strong {
+  color: #2563eb;
+  font-size: 0.95rem;
+}
+
+.control-group input[type="range"] {
+  width: 100%;
+  accent-color: #2563eb;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  color: #94a3b8;
+  font-size: 0.78rem;
+}
+
+.resize-button {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.resize-button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.processing-error {
+  margin: 20px 0;
+  padding: 14px 16px;
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+  .resize-controls {
+    padding: 22px 18px;
+  }
+
+  .dimensions-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
